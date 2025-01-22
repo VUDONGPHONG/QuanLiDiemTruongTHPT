@@ -1,7 +1,13 @@
 <script>
+    // Lấy URL hiện tại
     var pathname = window.location.pathname;
-    if (pathname !== "/") {
-      window.location.replace("/QuanLiDiemTruongTHPT/");
+  
+    // Chuyển hướng nếu không tìm thấy file
+    if (pathname.includes("/QuanLiDiemTruongTHPT/")) {
+      var newUrl = pathname.replace("/QuanLiDiemTruongTHPT/", "");
+      window.location.href = "/" + newUrl + ".html";
+    } else {
+      document.body.innerHTML = "Page not found!";
     }
   </script>
   
