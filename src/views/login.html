@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <link rel="shortcut icon" type="image/png" href="">
-    <title>login</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="../public/login.css">
     <script type="text/javascript" src="../public/login.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <% if (successMessage.length > 0) { %>
-        <script type="text/javascript">
-            alert("<%= successMessage %>");
-        </script>
-    <% } %>
+    <!-- Thông báo thành công -->
+    <script type="text/javascript">
+        const successMessage = ""; // Gán nội dung thông báo thành công tại đây
+        if (successMessage.length > 0) {
+            alert(successMessage);
+        }
+    </script>
 
-    <% if (errorMessage.length > 0) { %>
-        <script type="text/javascript">
-            alert("<%= errorMessage %>");
-        </script>
-    <% } %>
+    <!-- Thông báo lỗi -->
+    <script type="text/javascript">
+        const errorMessage = ""; // Gán nội dung thông báo lỗi tại đây
+        if (errorMessage.length > 0) {
+            alert(errorMessage);
+        }
+    </script>
 
     <div class="form-box">
         <div class="button-box">
@@ -28,6 +32,7 @@
             <button type="button" class="toggle-btn" id="reg" onclick="register()">Đăng kí</button>
         </div>
 
+        <!-- Form đăng kí -->
         <form id="register" class="input-group" action="/create-user" method="POST">
             <input type="text" class="input-field" placeholder="Tên tài khoản" name="Cr_user" required="required">
             <input type="email" class="input-field" placeholder="Email" name="Cr_mail" required="required">
@@ -42,6 +47,7 @@
             <button type="submit" id="btnSubmit" class="submit-btn reg-btn">Đăng kí</button>
         </form>
 
+        <!-- Form đăng nhập -->
         <form id="login" class="input-group" action="/check_login" method="POST">
             <div class="inp">
                 <input type="text" id="email" class="input-field" placeholder="Tên đăng nhập" style="width: 88%; border:none;" name="user" required="required">

@@ -22,7 +22,38 @@
 		})
 	</script>
 </head>
-<%- include('header.ejs') %>
+<header id="header">
+    <nav>
+        <div class="logo">
+            <img src="OIP.jpg" alt="logo">
+        </div>
+        <ul>
+            <li><a href="/index" class="trang-chu">Trang chủ</a></li>
+            <div class="so-xuong">
+                <li><a href="/tracuu" class="tra-cuu">Tra cứu</a></li>
+                <ul class="so-xuong-tra-cuu">
+                    <li><a href="/tracuu" id="diem-kiem-tra">Điểm kiểm tra</a></li>
+                    <li><a href="/tracuu" id="diem-thi">Điểm thi</a></li>
+                    <li><a href="/tracuu" id="diem-danh">Điểm danh</a></li>
+                </ul>
+            </div>
+            <li><a href="/contact" class="lien-he">Liên hệ</a></li>
+            <li><a href="/infor" class="thong-tin-ca-nhan">Thông tin cá nhân</a></li>
+        </ul>
+
+        <div class="o-tim-kiem">
+            <input type="text" class="tim-kiem" placeholder="Tìm kiếm">
+            <img src="https://th.bing.com/th/id/OIP.M5SZabOqMk1iyJ2OVSdlzAAAAA?rs=1&pid=ImgDetMain" alt="Tìm" onclick="slide()">
+        </div>
+
+        <div class="info">
+            <!-- Giả định người dùng đã đăng nhập -->
+            <span class="username" style="color: aliceblue;">Tên người dùng</span>
+            <a class="dang-ki" id="dang-xuat" href="/logout">Đăng xuất</a>
+        </div>
+    </nav>
+</header>
+
 <body>
     <div class="phan-lien-he" id="lien-he">
            
@@ -47,7 +78,16 @@
     </div>
 
 
-    <%- include('footer.ejs') %>
+    <footer>
+        <div class="footer">
+            <div class="thong-tin-footer">
+                    <p class="sdt-footer">Thông tin liên hệ: 0865798JQK</p>
+                    <p class="gmail-footer">Gmail: nguyencongloc987@gmail.com</p>
+                    <p class="dia-chi-footer">Khoa khoa học và CNGD</p>
+                    <p class="dai-hoc-footer">Đại học Bách Khoa Hà Nội</p>
+            </div>
+        </div>
+    </footer>
         <div id="nutCuonTrangLen">
             <!-- <i class="material-icons"></i> -->
             <div id="hinh-tron"></div>
