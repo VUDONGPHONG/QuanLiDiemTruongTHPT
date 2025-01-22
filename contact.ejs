@@ -1,0 +1,16 @@
+<%- include('header.ejs') %>
+    <main>
+        <form action="/contact-submit" method="post">
+            <p><label for="name">Name:</label></p>
+            <p><input type="text" name="name" id="name"></p>
+
+            <p><label for="email">Email:</label></p>
+            <p><input type="text" name="email" id="email"></p>
+
+            <p><label for="comment">Comment:</label></p>
+            <p><textarea name="comment" id="comment"></textarea></p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <%- include('footer.ejs') %>

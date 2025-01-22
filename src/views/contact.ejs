@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnEd</title>
+    <meta name="desciption" content="">
+    <link rel="stylesheet" type="text/css" href="../public/contact.css">
+    <script type="text/javascript" src="../public/contact.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<%- include('header.ejs') %>
+<body>
+    <div class="phan-lien-he" id="lien-he">
+           
+        <div class="soc-cheo"></div>
+        <div class="lien-he-tro-lai">
+            <div class="lien-he-form">
+            <form  method="POST" action="/contact-submit">
+                <label>Họ và tên<span class="bat-buoc">*</span></label><label><br>
+                <center>
+                <input type="text" name="name" style=" width: 150%" required="required"><br>
+                </center>
+                <label>Email <span class="bat-buoc">*</span></label><br>
+                <input type="email" name="mail" style="width: 150%" required="required"><br>
+                <label>Lớp <span class="bat-buoc">*</span></label><br>
+                <input type="text" name="class" style="width: 150%" required="required"><br>
+                <label>Tin nhắn <span class="bat-buoc">*</span></label><br>
+                <textarea name="comment" style="width: 150%" required="required"></textarea><br>
+                <button type="submit" id="lien-he-submit">Gửi liên hệ</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('footer.ejs') %>
+        <div id="nutCuonTrangLen">
+            <!-- <i class="material-icons"></i> -->
+            <div id="hinh-tron"></div>
+             <div id="mui-ten"></div>
+        </div>
+        <script>
+            document.getElementById('nutCuonTrangLen').addEventListener('click', function() {
+            window.scrollTo({
+                top:0,
+                left: 0,
+                behavior:"smooth"
+                     } );
+        });
+        
+        </script>
+       

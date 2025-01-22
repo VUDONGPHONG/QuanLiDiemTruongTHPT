@@ -1,0 +1,30 @@
+footer bao gồm
+thông tin liên hệ: 0865798JQK
+gmail: nguyencongloc987@gmail.com
+Địa chỉ: Khoa khoa học và CNGD - Đại học BKHN 
+...
+...
+
+chưa làm env: thay đổi phần code cố định như port
+ngày 9/6 - đã kết nối được database với server
+
+Giải thích code:
+server.js - server
+viewEngine.js -Thêm các tempale... 
+controllers - các điều hướng cụ thể dành cho routes 
+html-file html
+public - các file img, js, css hiển thị 
+views - ejs
+routes - các routes có trong bài 
+
+9/6
+- connection pool : tai su dung connection.
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  database: 'test',
+  waitForConnections: true, // 
+  connectionLimit: 10,  
+}); 
+
+docker compose -f mysqlsv.yml -p nodejs-sql up-d

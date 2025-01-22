@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnEd</title>
+    <meta name="desciption" content="">
+    <link rel="stylesheet" type="text/css" href="../public/infor.css">
+    <script type="text/javascript" src="../public/infor.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+    
+    <%- include('header.ejs') %>
+        
+        <div class="Dien-thong-tin" >
+            <form id="infoForm" method="post" >
+                <div class="nhom-thong-tin">
+                    <label for="name">Họ và Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                </div>
+                <div class="nhom-thong-tin">
+                    <label>Giới tính:</label>
+                    <div class="thong-tin-gioi-tinh">
+                        <label><input type="radio" name="gender" value="Nam" required> Nam</label>
+                        <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                        
+                        
+                    </div>
+                </div>
+                <div class="nhom-thong-tin">
+                    <label for="class">Lớp:</label>
+                    <input type="text" id="class" name="class" required>
+                    
+                </div>
+               
+                <div class="nhom-thong-tin">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                   
+                </div>
+                <div class="nhom-thong-tin">
+                    <label for="address">Địa chỉ:</label>
+                    <input type="text" id="address" name="address" required>
+                  
+                </div>
+                <div class="nhom-thong-tin">
+                    <label for="status">Tình trạng học tập:</label>
+                    <select id="status" name="status" required>
+                        <option value="Học">Học</option>
+                        <option value="Thôi">Thôi</option>
+                    </select>
+                    
+                </div>
+                <button type="submit" id="Xac-nhan-dien-thong-tin" onclick="Xacnhandienthongtin()" onclick="Taithongtin()">Xác nhận</button>
+            </form>
+        </div>
+
+
+
+        <table class="thong-tin-ca-nhan-table" id="thong-tin-table">
+            <thead>
+                <tr>
+                    <th>Họ và Tên</th>
+                    <th>Giới tính</th>
+                    <th>Lớp</th>
+                    <!-- <th>Khoa/viện</th> -->
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                    <th>Tình trạng học tập</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+                  
+                    
+
+          
+            
+        </table>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <%- include('footer.ejs') %>
+        <p class="cuoi-trang"></p>
+        <div id="nutCuonTrangLen">
+            <!-- <i class="material-icons"></i> -->
+            <div id="hinh-tron"></div>
+             <div id="mui-ten"></div>
+        </div>
+        <script>
+document.getElementById('nutCuonTrangLen').addEventListener('click', function() {
+            window.scrollTo({
+                top:0,
+                left: 0,
+                behavior:"smooth"
+                     } );
+        });
+        
+        </script>
+      

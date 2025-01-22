@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+.black {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 0px;
+    height: 20vh;
+}
+nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li {
+	list-style: none;
+	margin: 5px 10px;
+}
+
+nav ul li a {
+	padding: 2px 10px;
+	color: #2e2e2e;
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #fff;
+	border-radius: 5px;
+	background: #df2869;
+}
+.tra-cuu{
+	color: #fff;
+	border-radius: 5px;
+	background: #df2869;
+}
+.o-tim-kiem {
+	padding: 2px 10px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	/* background: #0066ff; */
+	border: 1px solid black;
+	border-radius: 20px;
+}
+.o-tim-kiem img {
+	width: 25px;
+	cursor: pointer;
+}
+.o-tim-kiem .tim-kiem {
+	/* padding: 2px 10px; */
+	outline: none;
+	border: none;
+	background: transparent;
+}
+.dang-ki {
+	margin-left: 50px;
+	padding: 5px 20px;
+	border: 2px solid #df2869;
+	border-radius: 20px;
+	text-decoration: none;
+	
+	transition: .5s;
+	background-color: #df2869;
+	color: #fff;
+}
+.dang-ki:hover {
+	color: #2e2e2e;
+	background: #fff;
+}
+.logo img{
+	width: 100px;
+	cursor: pointer;
+	transition: all 1s;
+}
+a {
+	float: left;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: #2E3D49;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+#hinh-tron{
+	position: fixed;
+	right:10px;
+	bottom:10px;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background:#df2869;
+	box-shadow: 0 0 10px rgb(231, 31, 84, 0.5);
+	color: #fff;
+	outline: none;
+	cursor:pointer;
+	border: 1px solid #df2869;
+	
+}
+
+#mui-ten{
+	position: fixed;
+	right:25px;
+	bottom:20px;
+	width:20px;
+	height:20px;
+	background:#ffffff;
+	background: linear-gradient(to bottom left, transparent 50%, white 50%);
+	outline: none;
+	cursor:pointer;
+	border: 1px solid #df2869;
+	transform: rotate(135deg);
+	
+}
+.cuoi-trang{
+	position:relative;
+	top:2000px;
+	color:#151515;
+}
+
+/* .xuong {
+	
+	overflow: hidden;
+  } */
+  
+  .so-xuong {
+	border: none;
+	outline: none;
+	
+	margin: 0px; 
+  }
+  
+
+.so-xuong-tra-cuu {
+	display:none;
+	position: absolute;
+	background-color: #ffffff;
+	max-width: 150px; 
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+	margin-top: 3px;
+	top:85px;
+	
+  }
+  .so-xuong-tra-cuu  {
+	float: none;
+	color:rgb(0, 0, 0);
+	padding: 0 5px 5px 0;
+	text-decoration: none;
+	display: block;
+	text-align: left; 
+	display:none;
+  }
+  
+  .so-xuong-tra-cuu a:hover {
+	background-color: #df2869; 
+	color:#fff;
+  }
+  
+  
+  .so-xuong:hover .so-xuong-tra-cuu {
+	display: block;
+  }
+  @media screen and (max-width:1200px) {
+	.so-xuong-tra-cuu{
+		display:none;
+	}
+  }
+  .phan-kiem-tra{
+	margin-top:150px;
+	color:#151515;
+  }
+  .phan-thi{
+	margin-top:1150px;
+	color:#151515;
+  }
+  .phan-diem-danh{
+	margin-top:1150px;
+	color:#151515;
+  }
+ 
+  footer {
+	color: #E5E8EF;
+	background: #000D;
+	padding: 50px 0; 
+	position:relative;
+	top:2000px;
+}
+footer .footer {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+@media screen and ( max-width: 1200px){
+	.footer{
+		max-width:900px;
+	}
+	.thong-tin-footer{
+		width:100%;
+		text-align: center;
+	}
+}
+@media screen and ( max-width: 800px){
+.footer{
+	max-width:700px;
+}
+.thong-tin-footer{
+	width:100%;
+	text-align: center;
+}
+}
+
+
+/*dang xuat */
+.info {
+    margin-left: 20px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.username {
+    padding: 5px 10px; 
+    background-color: #df2869; 
+    color: white; 
+    border-radius: 10px; 
+    margin-right: 20px; /* Điều chỉnh khoảng cách với nút Đăng ký */
+}
+
+.dang-ki {
+    padding: 5px 20px; 
+    border: 2px solid #df2869; 
+    border-radius: 20px; 
+    text-decoration: none; 
+    transition: .5s; 
+    background-color: #df2869; 
+    color: white; 
+	margin-left: 10px;
+}
+
+.dang-ki:hover {
+    color: #df2869; 
+    background: white; 
+}

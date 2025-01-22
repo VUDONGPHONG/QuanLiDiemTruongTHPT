@@ -1,0 +1,46 @@
+Web quản lý điểm nội bộ của 1 trường THPT
+
+
+VỀ TRANG ĐĂNG NHẬP, ĐĂNG KÝ 
+- Danh sách học sinh,giáo viên sẽ được gửi về cho admin, admin update lên hệ thống, trong đó có mã học sinh/giáo viên.
+- Mỗi học sinh/ giáo viên sẽ sử dụng mã học sinh/ giáo viên để đăng ký tài khoản.
+- Khi đăng kí sẽ được chọn role (student/teacher) để tiến hành phân quyền. 
+- Tài khoản admin không thể đăng ký, chỉ được cấp.
+- Mỗi role sẽ có những chức năng khác nhau, các chức năng của role khác sẽ bị ẩn đi, nếu cố tình truy cập sẽ báo không có quyền.
+- Có một vài kiểm tra cơ bản:
+ + Tài khoản đã tồn tại trên hệ thống hay chưa
+ + Mail đã tồn tại chưa
+ + Xác nhận mật khẩu có khớp hay không 
+ + Đăng nhập sẽ truy vấn vào hệ thống để kiểm tra.
+- Nếu đăng ký không thành công sẽ báo lỗi tùy theo lỗi mà người dùng mắc phải 
+- Đăng nhập không thành công sẽ hiện cửa sổ arlet thông báo tài khoản hoặc mk không đúng.
+
+VỀ CÁC TRANG CHỨC NĂNG
+- header chung cho các trang, có tính năng hide những chức năng mà role không có quyền truy cập
+- footer chung cho các trang, có thông tin liên hệ, gmail, địa chỉ, liên kết đến trang giới thiệu và contact.
+- Trang giới thiệu có thông tin của 3 thành viên trong nhóm
+- Trang liên hệ có form, submit form sẽ được gửi lên file data trên server.
+- Trang chủ ( cả 3 role đều có): Các thông báo về lịch thi, . . . 
+- Trang tra cứu (student): Tra cứu điểm thi, điểm danh các buổi học.
+- Trang thông tin học sinh (student): thông tin về học sinh 
+- Trang thông tin giáo viên ( teacher): thông tin về giáo viên
+- Quyền giáo viên ( teacher): Thêm, sửa điểm thi, bảng điểm danh.
+- Quyền admin ( role admin): thêm,sửa thông tin học sinh/ giáo viên.
+
+CÁC TIÊU CHÍ CÓ TRONG WEB 
+- Có trên 5 trang 
+- Lưu trữ dữ liệu bằng database
+- Có chức năng đăng nhập, đăng xuất ( phân biệt user và admin)
+- Cho phép đăng ký tự do ( user) từ trang đăng ký
+- Có header, footer chung
+- Có thanh công cụ
+- trên thanh công cụ có logo, menu chính, ô hiển thị người dùng khi đã đăng nhập 
+- Menu có con sổ khi chuột đi qua 
+- Nút hình tròn để quay lại đầu trang 
+- Bình thường mờ khi trỏ chuột vào sẽ rõ 
+- Có các hiệu ứng box-sadow, border-radius, ...
+- submit form bằng ajax
+- Trang giới thiệu và thông tin liên hệ: trang giới thiệu thành viên, thông tin liên hệ, form phản hồi gắn ở footer
+- Trang quản trị: cho phép cập nhật nội dung
+- có responsive
+

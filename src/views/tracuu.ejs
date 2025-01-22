@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnEd</title>
+    <meta name="desciption" content="">
+    <link rel="stylesheet" type="text/css" href="../public/tracuu.css">
+    <script type="text/javascript" src="../public/tracuu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+    
+    <%- include('header.ejs') %>
+        <div class="phan-kiem-tra">
+            <h2 class="diem-kiem-tra">Điểm kiểm tra</h2>
+        </div>
+        <div class="phan-thi">
+            <h2 class="diem-thi">Điểm thi</h2>
+        </div>
+        <div class="phan-diem-danh">
+            <h2 class="diem-danh">Điểm danh</h2>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+
+        <section id="diem-danh-section">
+            <p>Nội dung phần điểm danh...</p>
+        </section>
+
+        
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <%- include('footer.ejs') %>
+        <p class="cuoi-trang"></p>
+        <div id="nutCuonTrangLen">
+            <!-- <i class="material-icons"></i> -->
+            <div id="hinh-tron"></div>
+             <div id="mui-ten"></div>
+        </div>
+        
+        <script>
+             
+        
+            document.getElementById('diem-thi').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 1150,
+        behavior: 'smooth' // Tạo hiệu ứng cuộn mượt
+    });
+});
+document.getElementById('diem-danh').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 2350,
+        behavior: 'smooth' // Tạo hiệu ứng cuộn mượt
+    });
+});
+            document.getElementById('nutCuonTrangLen').addEventListener('click', function() {
+            window.scrollTo({
+                top:0,
+                left: 0,
+                behavior:"smooth"
+                     } );
+        });
+        
+        </script>
+      
+  

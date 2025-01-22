@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="desciption" content="">
+    <link rel="stylesheet" href="../public/home.css">
+    <script type="text/javascript" src="../public/home.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+    
+    <%- include('header.ejs') %>
+        <div class="trich-dan">
+			<div class="trich-dan-noi-dung">
+				<p>Website quản lí điểm trường trung học phổ thông</p>
+				<h5>Giáo dục là quá trình tạo điều kiện học tập, hoặc tiếp thu kiến thức, kỹ năng, giá trị, niềm tin và thói quen. Phương pháp giáo dục bao gồm giảng dạy, đào tạo, kể chuyện, thảo luận và nghiên cứu trực tiếp!</h5>
+				
+			</div>
+			<div class="hust-img">
+				<img src="https://fed.hust.edu.vn/uploads/feed/banners/cover-tin-tuc_1_1.jpg" alt="svg">
+			</div>
+		</div>
+        <p><a class="link" href="https://ctt.hust.edu.vn/Upload/Nguyen%20Quoc%20Dat/files/DTDH_Lichthi/2023-2024/LTCK-20232-CT%20Chuan-Elitech-04062024.pdf" >Lịch thi cuối kì năm 2024 - 2025</a>.</p>
+        <p> <a class="link"  class="link" href="https://ctt.hust.edu.vn/Upload/Nguyen%20Quoc%20Dat/files/DTDH_Lichthi/2023-2024/LTGK-20232AB-CK-20232A-10042024.pdf" >Lịch thi vào 10 năm 2024 - 2025</a></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+     
+        <%- include('footer.ejs') %>
+
+
+    
+        <div id="nutCuonTrangLen">
+            <!-- <i class="material-icons"></i> -->
+            <div id="hinh-tron"></div>
+             <div id="mui-ten"></div>
+        </div>
+
+        <script>
+             function navigateAndScroll(id) {
+            let scrollPosition;
+            if (id === "diem-kiem-tra") {
+                scrollPosition = 150;
+            } else if (id === "diem-thi") {
+                scrollPosition = 1150;
+            } else if (id === "diem-danh") {
+                scrollPosition = 2150;
+            }
+            window.location.href = `tracuu.html#scroll=${scrollPosition}`;
+        }
+         
+            document.getElementById('nutCuonTrangLen').addEventListener('click', function() {
+    window.scrollTo({
+        top:0,
+        left: 0,
+        behavior:"smooth"
+             } );
+});
+        </script>
+    </div>
